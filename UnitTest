@@ -1,0 +1,342 @@
+test_bitcoin --log_level=all --run_test=getarg_tests
+Running 8 test cases...
+Entering test module "Bitcoin Core Test Suite"
+test/addrman_tests.cpp(61): Test suite "addrman_tests" is skipped because disabled
+test/allocator_tests.cpp(16): Test suite "allocator_tests" is skipped because disabled
+test/amount_tests.cpp(12): Test suite "amount_tests" is skipped because disabled
+test/argsman_tests.cpp(22): Test suite "argsman_tests" is skipped because disabled
+test/arith_uint256_tests.cpp(18): Test suite "arith_uint256_tests" is skipped because disabled
+test/banman_tests.cpp(16): Test suite "banman_tests" is skipped because disabled
+test/base32_tests.cpp(12): Test suite "base32_tests" is skipped because disabled
+test/base58_tests.cpp(20): Test suite "base58_tests" is skipped because disabled
+test/base64_tests.cpp(12): Test suite "base64_tests" is skipped because disabled
+test/bech32_tests.cpp(13): Test suite "bech32_tests" is skipped because disabled
+test/bip32_tests.cpp(160): Test suite "bip32_tests" is skipped because disabled
+test/blockchain_tests.cpp(50): Test suite "blockchain_tests" is skipped because disabled
+test/blockencodings_tests.cpp(18): Test suite "blockencodings_tests" is skipped because disabled
+test/blockfilter_index_tests.cpp(24): Test suite "blockfilter_index_tests" is skipped because disabled
+test/blockfilter_tests.cpp(17): Test suite "blockfilter_tests" is skipped because disabled
+test/blockmanager_tests.cpp(17): Test suite "blockmanager_tests" is skipped because disabled
+test/bloom_tests.cpp(24): Test suite "bloom_tests" is skipped because disabled
+test/bswap_tests.cpp(9): Test suite "bswap_tests" is skipped because disabled
+test/checkqueue_tests.cpp(35): Test suite "checkqueue_tests" is skipped because disabled
+test/coins_tests.cpp(98): Test suite "coins_tests" is skipped because disabled
+test/coinstatsindex_tests.cpp(18): Test suite "coinstatsindex_tests" is skipped because disabled
+test/compilerbug_tests.cpp(7): Test suite "compilerbug_tests" is skipped because disabled
+test/compress_tests.cpp(25): Test suite "compress_tests" is skipped because disabled
+test/crypto_tests.cpp(27): Test suite "crypto_tests" is skipped because disabled
+test/cuckoocache_tests.cpp(30): Test suite "cuckoocache_tests" is skipped because disabled
+test/dbwrapper_tests.cpp(23): Test suite "dbwrapper_tests" is skipped because disabled
+test/denialofservice_tests.cpp(36): Test suite "denialofservice_tests" is skipped because disabled
+test/descriptor_tests.cpp(371): Test suite "descriptor_tests" is skipped because disabled
+test/flatfile_tests.cpp(13): Test suite "flatfile_tests" is skipped because disabled
+test/fs_tests.cpp(16): Test suite "fs_tests" is skipped because disabled
+test/getarg_tests.cpp(18): Entering test suite "getarg_tests"
+test/getarg_tests.cpp(53): Entering test case "setting_args"
+test/getarg_tests.cpp(65): info: check args.GetSetting("foo").write() == "\"str\"" has passed
+test/getarg_tests.cpp(66): info: check args.GetArg("foo", "default") == "str" has passed
+test/getarg_tests.cpp(67): info: check args.GetIntArg("foo", 100) == 0 has passed
+test/getarg_tests.cpp(68): info: check args.GetBoolArg("foo", true) == false has passed
+test/getarg_tests.cpp(69): info: check args.GetBoolArg("foo", false) == false has passed
+test/getarg_tests.cpp(72): info: check args.GetSetting("foo").write() == "\"99\"" has passed
+test/getarg_tests.cpp(73): info: check args.GetArg("foo", "default") == "99" has passed
+test/getarg_tests.cpp(74): info: check args.GetIntArg("foo", 100) == 99 has passed
+test/getarg_tests.cpp(75): info: check args.GetBoolArg("foo", true) == true has passed
+test/getarg_tests.cpp(76): info: check args.GetBoolArg("foo", false) == true has passed
+test/getarg_tests.cpp(79): info: check args.GetSetting("foo").write() == "\"3.25\"" has passed
+test/getarg_tests.cpp(80): info: check args.GetArg("foo", "default") == "3.25" has passed
+test/getarg_tests.cpp(81): info: check args.GetIntArg("foo", 100) == 3 has passed
+test/getarg_tests.cpp(82): info: check args.GetBoolArg("foo", true) == true has passed
+test/getarg_tests.cpp(83): info: check args.GetBoolArg("foo", false) == true has passed
+test/getarg_tests.cpp(86): info: check args.GetSetting("foo").write() == "\"0\"" has passed
+test/getarg_tests.cpp(87): info: check args.GetArg("foo", "default") == "0" has passed
+test/getarg_tests.cpp(88): info: check args.GetIntArg("foo", 100) == 0 has passed
+test/getarg_tests.cpp(89): info: check args.GetBoolArg("foo", true) == false has passed
+test/getarg_tests.cpp(90): info: check args.GetBoolArg("foo", false) == false has passed
+test/getarg_tests.cpp(93): info: check args.GetSetting("foo").write() == "\"\"" has passed
+test/getarg_tests.cpp(94): info: check args.GetArg("foo", "default") == "" has passed
+test/getarg_tests.cpp(95): info: check args.GetIntArg("foo", 100) == 0 has passed
+test/getarg_tests.cpp(96): info: check args.GetBoolArg("foo", true) == true has passed
+test/getarg_tests.cpp(97): info: check args.GetBoolArg("foo", false) == true has passed
+test/getarg_tests.cpp(100): info: check args.GetSetting("foo").write() == "99" has passed
+test/getarg_tests.cpp(101): info: check args.GetArg("foo", "default") == "99" has passed
+test/getarg_tests.cpp(102): info: check args.GetIntArg("foo", 100) == 99 has passed
+test/getarg_tests.cpp(103): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(104): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(107): info: check args.GetSetting("foo").write() == "3.25" has passed
+test/getarg_tests.cpp(108): info: check args.GetArg("foo", "default") == "3.25" has passed
+test/getarg_tests.cpp(109): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(110): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(111): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(114): info: check args.GetSetting("foo").write() == "0" has passed
+test/getarg_tests.cpp(115): info: check args.GetArg("foo", "default") == "0" has passed
+test/getarg_tests.cpp(116): info: check args.GetIntArg("foo", 100) == 0 has passed
+test/getarg_tests.cpp(117): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(118): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(121): info: check args.GetSetting("foo").write() == "true" has passed
+test/getarg_tests.cpp(122): info: check args.GetArg("foo", "default") == "1" has passed
+test/getarg_tests.cpp(123): info: check args.GetIntArg("foo", 100) == 1 has passed
+test/getarg_tests.cpp(124): info: check args.GetBoolArg("foo", true) == true has passed
+test/getarg_tests.cpp(125): info: check args.GetBoolArg("foo", false) == true has passed
+test/getarg_tests.cpp(128): info: check args.GetSetting("foo").write() == "false" has passed
+test/getarg_tests.cpp(129): info: check args.GetArg("foo", "default") == "0" has passed
+test/getarg_tests.cpp(130): info: check args.GetIntArg("foo", 100) == 0 has passed
+test/getarg_tests.cpp(131): info: check args.GetBoolArg("foo", true) == false has passed
+test/getarg_tests.cpp(132): info: check args.GetBoolArg("foo", false) == false has passed
+test/getarg_tests.cpp(135): info: check args.GetSetting("foo").write() == "{}" has passed
+test/getarg_tests.cpp(136): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(137): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(138): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(139): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(142): info: check args.GetSetting("foo").write() == "[]" has passed
+test/getarg_tests.cpp(143): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(144): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(145): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(146): info: check 'exception "std::runtime_error" raised as expected' has passed
+test/getarg_tests.cpp(149): info: check args.GetSetting("foo").write() == "null" has passed
+test/getarg_tests.cpp(150): info: check args.GetArg("foo", "default") == "default" has passed
+test/getarg_tests.cpp(151): info: check args.GetIntArg("foo", 100) == 100 has passed
+test/getarg_tests.cpp(152): info: check args.GetBoolArg("foo", true) == true has passed
+test/getarg_tests.cpp(153): info: check args.GetBoolArg("foo", false) == false has passed
+test/getarg_tests.cpp(53): Leaving test case "setting_args"; testing time: 26093us
+test/getarg_tests.cpp(156): Entering test case "boolarg"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(163): info: check local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(164): info: check local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(166): info: check !local_args.GetBoolArg("-fo", false) has passed
+test/getarg_tests.cpp(167): info: check local_args.GetBoolArg("-fo", true) has passed
+test/getarg_tests.cpp(169): info: check !local_args.GetBoolArg("-fooo", false) has passed
+test/getarg_tests.cpp(170): info: check local_args.GetBoolArg("-fooo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(173): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(174): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(177): info: check local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(178): info: check local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(182): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(183): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(186): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(187): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(190): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(191): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(194): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(195): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(198): info: check local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(199): info: check local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(203): info: check local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(204): info: check local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(207): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(208): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(156): Leaving test case "boolarg"; testing time: 2622us
+test/getarg_tests.cpp(211): Entering test case "stringarg"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(219): info: check local_args.GetArg("-foo", "") == "" has passed
+test/getarg_tests.cpp(220): info: check local_args.GetArg("-foo", "eleven") == "eleven" has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(223): info: check local_args.GetArg("-foo", "") == "" has passed
+test/getarg_tests.cpp(224): info: check local_args.GetArg("-foo", "eleven") == "" has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(227): info: check local_args.GetArg("-foo", "") == "" has passed
+test/getarg_tests.cpp(228): info: check local_args.GetArg("-foo", "eleven") == "" has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(231): info: check local_args.GetArg("-foo", "") == "11" has passed
+test/getarg_tests.cpp(232): info: check local_args.GetArg("-foo", "eleven") == "11" has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(235): info: check local_args.GetArg("-foo", "") == "eleven" has passed
+test/getarg_tests.cpp(236): info: check local_args.GetArg("-foo", "eleven") == "eleven" has passed
+test/getarg_tests.cpp(211): Leaving test case "stringarg"; testing time: 2495us
+test/getarg_tests.cpp(239): Entering test case "intarg"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(247): info: check local_args.GetIntArg("-foo", 11) == 11 has passed
+test/getarg_tests.cpp(248): info: check local_args.GetIntArg("-foo", 0) == 0 has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(251): info: check local_args.GetIntArg("-foo", 11) == 0 has passed
+test/getarg_tests.cpp(252): info: check local_args.GetIntArg("-bar", 11) == 0 has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(256): info: check local_args.GetIntArg("-foo", 0) == std::numeric_limits<int64_t>::min() has passed
+test/getarg_tests.cpp(257): info: check local_args.GetIntArg("-bar", 0) == std::numeric_limits<int64_t>::max() has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(260): info: check local_args.GetIntArg("-foo", 0) == 11 has passed
+test/getarg_tests.cpp(261): info: check local_args.GetIntArg("-bar", 11) == 12 has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(264): info: check local_args.GetIntArg("-foo", 1) == 0 has passed
+test/getarg_tests.cpp(265): info: check local_args.GetIntArg("-bar", 11) == 0 has passed
+test/getarg_tests.cpp(239): Leaving test case "intarg"; testing time: 2392us
+test/getarg_tests.cpp(268): Entering test case "patharg"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(275): info: check local_args.GetPathArg("-dir") == fs::path{} has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(279): info: check local_args.GetPathArg("-dir") == root_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(282): info: check local_args.GetPathArg("-dir") == root_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(285): info: check local_args.GetPathArg("-dir") == root_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(288): info: check local_args.GetPathArg("-dir") == root_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(313): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(316): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(319): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(322): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(325): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(328): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(331): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(334): info: check local_args.GetPathArg("-dir") == absolute_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(338): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(341): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(344): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(347): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(350): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(353): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(356): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(359): info: check local_args.GetPathArg("-dir") == relative_path has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(369): info: check local_args.GetPathArg("-dir", "default") == fs::path{"default"} has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(371): info: check local_args.GetPathArg("-dir", "default") == fs::path{"override"} has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(373): info: check local_args.GetPathArg("-dir", "default") == fs::path{"default"} has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(375): info: check local_args.GetPathArg("-dir", "default") == fs::path{"default"} has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(377): info: check local_args.GetPathArg("-dir", "default") == fs::path{""} has passed
+test/getarg_tests.cpp(268): Leaving test case "patharg"; testing time: 2346us
+test/getarg_tests.cpp(380): Entering test case "doubledash"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(388): info: check local_args.GetBoolArg("-foo", false) == true has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(391): info: check local_args.GetArg("-foo", "") == "verbose" has passed
+test/getarg_tests.cpp(392): info: check local_args.GetIntArg("-bar", 0) == 1 has passed
+test/getarg_tests.cpp(380): Leaving test case "doubledash"; testing time: 1975us
+test/getarg_tests.cpp(395): Entering test case "boolargno"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(403): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(404): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(407): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(408): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(411): info: check local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(412): info: check local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(415): info: check !local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(416): info: check !local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(419): info: check local_args.GetBoolArg("-foo", true) has passed
+test/getarg_tests.cpp(420): info: check local_args.GetBoolArg("-foo", false) has passed
+test/getarg_tests.cpp(395): Leaving test case "boolargno"; testing time: 1957us
+test/getarg_tests.cpp(423): Entering test case "logargs"
+test/getarg_tests.cpp(36): info: check local_args.ParseParameters(vecChar.size(), vecChar.data(), error) has passed
+test/getarg_tests.cpp(446): info: check str.find("Command-line arg: okaylog-bool=\"\"") != std::string::npos has passed
+test/getarg_tests.cpp(447): info: check str.find("Command-line arg: okaylog-negbool=false") != std::string::npos has passed
+test/getarg_tests.cpp(448): info: check str.find("Command-line arg: okaylog=\"public\"") != std::string::npos has passed
+test/getarg_tests.cpp(449): info: check str.find("dontlog=****") != std::string::npos has passed
+test/getarg_tests.cpp(450): info: check str.find("private42") == std::string::npos has passed
+test/getarg_tests.cpp(423): Leaving test case "logargs"; testing time: 2014us
+test/getarg_tests.cpp(18): Leaving test suite "getarg_tests"; testing time: 42108us
+test/hash_tests.cpp(13): Test suite "hash_tests" is skipped because disabled
+test/headers_sync_chainwork_tests.cpp(58): Test suite "headers_sync_chainwork_tests" is skipped because disabled
+test/httpserver_tests.cpp(10): Test suite "httpserver_tests" is skipped because disabled
+test/i2p_tests.cpp(19): Test suite "i2p_tests" is skipped because disabled
+test/interfaces_tests.cpp(16): Test suite "interfaces_tests" is skipped because disabled
+test/key_io_tests.cpp(19): Test suite "key_io_tests" is skipped because disabled
+test/key_tests.cpp(32): Test suite "key_tests" is skipped because disabled
+test/logging_tests.cpp(20): Test suite "logging_tests" is skipped because disabled
+test/mempool_tests.cpp(16): Test suite "mempool_tests" is skipped because disabled
+test/merkle_tests.cpp(10): Test suite "merkle_tests" is skipped because disabled
+test/merkleblock_tests.cpp(14): Test suite "merkleblock_tests" is skipped because disabled
+test/miner_tests.cpp(54): Test suite "miner_tests" is skipped because disabled
+test/miniscript_tests.cpp(159): Test suite "miniscript_tests" is skipped because disabled
+test/minisketch_tests.cpp(16): Test suite "minisketch_tests" is skipped because disabled
+test/multisig_tests.cpp(19): Test suite "multisig_tests" is skipped because disabled
+test/net_peer_eviction_tests.cpp(18): Test suite "net_peer_eviction_tests" is skipped because disabled
+test/net_tests.cpp(36): Test suite "net_tests" is skipped because disabled
+test/netbase_tests.cpp(23): Test suite "netbase_tests" is skipped because disabled
+test/orphanage_tests.cpp(18): Test suite "orphanage_tests" is skipped because disabled
+test/pmt_tests.cpp(28): Test suite "pmt_tests" is skipped because disabled
+test/policy_fee_tests.cpp(12): Test suite "policy_fee_tests" is skipped because disabled
+test/policyestimator_tests.cpp(16): Test suite "policyestimator_tests" is skipped because disabled
+test/pow_tests.cpp(12): Test suite "pow_tests" is skipped because disabled
+test/prevector_tests.cpp(16): Test suite "prevector_tests" is skipped because disabled
+test/raii_event_tests.cpp(16): Test suite "raii_event_tests" is skipped because disabled
+test/random_tests.cpp(14): Test suite "random_tests" is skipped because disabled
+test/rbf_tests.cpp(17): Test suite "rbf_tests" is skipped because disabled
+test/rest_tests.cpp(12): Test suite "rest_tests" is skipped because disabled
+test/result_tests.cpp(19): Test suite "result_tests" is skipped because disabled
+test/reverselock_tests.cpp(12): Test suite "reverselock_tests" is skipped because disabled
+test/rpc_tests.cpp(83): Test suite "rpc_tests" is skipped because disabled
+test/sanity_tests.cpp(11): Test suite "sanity_tests" is skipped because disabled
+test/scheduler_tests.cpp(16): Test suite "scheduler_tests" is skipped because disabled
+test/script_p2sh_tests.cpp(51): Test suite "script_p2sh_tests" is skipped because disabled
+test/script_parse_tests.cpp(12): Test suite "script_parse_tests" is skipped because disabled
+test/script_segwit_tests.cpp(10): Test suite "script_segwit_tests" is skipped because disabled
+test/script_standard_tests.cpp(20): Test suite "script_standard_tests" is skipped because disabled
+test/script_tests.cpp(115): Test suite "script_tests" is skipped because disabled
+test/scriptnum_tests.cpp(13): Test suite "scriptnum_tests" is skipped because disabled
+test/serfloat_tests.cpp(16): Test suite "serfloat_tests" is skipped because disabled
+test/serialize_tests.cpp(15): Test suite "serialize_tests" is skipped because disabled
+test/settings_tests.cpp(50): Test suite "settings_tests" is skipped because disabled
+test/sighash_tests.cpp(117): Test suite "sighash_tests" is skipped because disabled
+test/sigopcount_tests.cpp(27): Test suite "sigopcount_tests" is skipped because disabled
+test/skiplist_tests.cpp(14): Test suite "skiplist_tests" is skipped because disabled
+test/sock_tests.cpp(18): Test suite "sock_tests" is skipped because disabled
+test/streams_tests.cpp(13): Test suite "streams_tests" is skipped because disabled
+test/sync_tests.cpp(80): Test suite "sync_tests" is skipped because disabled
+test/system_tests.cpp(24): Test suite "system_tests" is skipped because disabled
+test/timedata_tests.cpp(19): Test suite "timedata_tests" is skipped because disabled
+test/torcontrol_tests.cpp(17): Test suite "torcontrol_tests" is skipped because disabled
+test/transaction_tests.cpp(186): Test suite "transaction_tests" is skipped because disabled
+test/txindex_tests.cpp(15): Test suite "txindex_tests" is skipped because disabled
+test/txpackage_tests.cpp(17): Test suite "txpackage_tests" is skipped because disabled
+test/txreconciliation_tests.cpp(11): Test suite "txreconciliation_tests" is skipped because disabled
+test/txrequest_tests.cpp(17): Test suite "txrequest_tests" is skipped because disabled
+test/txvalidation_tests.cpp(18): Test suite "txvalidation_tests" is skipped because disabled
+test/txvalidationcache_tests.cpp(26): Test suite "txvalidationcache_tests" is skipped because disabled
+test/uint256_tests.cpp(18): Test suite "uint256_tests" is skipped because disabled
+test/util_tests.cpp(54): Test suite "util_tests" is skipped because disabled
+test/util_threadnames_tests.cpp(20): Test suite "util_threadnames_tests" is skipped because disabled
+test/validation_block_tests.cpp(34): Test suite "validation_block_tests" is skipped because disabled
+test/validation_chainstate_tests.cpp(19): Test suite "validation_chainstate_tests" is skipped because disabled
+test/validation_chainstatemanager_tests.cpp(26): Test suite "validation_chainstatemanager_tests" is skipped because disabled
+test/validation_flush_tests.cpp(11): Test suite "validation_flush_tests" is skipped because disabled
+test/validation_tests.cpp(16): Test suite "validation_tests" is skipped because disabled
+test/validationinterface_tests.cpp(13): Test suite "validationinterface_tests" is skipped because disabled
+test/versionbits_tests.cpp(185): Test suite "versionbits_tests" is skipped because disabled
+wallet/test/feebumper_tests.cpp(18): Test suite "feebumper_tests" is skipped because disabled
+wallet/test/psbt_wallet_tests.cpp(15): Test suite "psbt_wallet_tests" is skipped because disabled
+wallet/test/spend_tests.cpp(16): Test suite "spend_tests" is skipped because disabled
+wallet/test/wallet_tests.cpp(44): Test suite "wallet_tests" is skipped because disabled
+wallet/test/walletdb_tests.cpp(13): Test suite "walletdb_tests" is skipped because disabled
+wallet/test/wallet_crypto_tests.cpp(14): Test suite "wallet_crypto_tests" is skipped because disabled
+wallet/test/wallet_transaction_tests.cpp(12): Test suite "wallet_transaction_tests" is skipped because disabled
+wallet/test/coinselector_tests.cpp(23): Test suite "coinselector_tests" is skipped because disabled
+wallet/test/init_tests.cpp(14): Test suite "init_tests" is skipped because disabled
+wallet/test/ismine_tests.cpp(18): Test suite "ismine_tests" is skipped because disabled
+wallet/test/rpc_util_tests.cpp(11): Test suite "wallet_util_tests" is skipped because disabled
+wallet/test/scriptpubkeyman_tests.cpp(14): Test suite "scriptpubkeyman_tests" is skipped because disabled
+wallet/test/walletload_tests.cpp(13): Test suite "walletload_tests" is skipped because disabled
+Leaving test module "Bitcoin Core Test Suite"; testing time: 43108us
+
+*** No errors detected

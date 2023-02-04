@@ -1,0 +1,2 @@
+# BitcoinCoreTests
+TestOutput

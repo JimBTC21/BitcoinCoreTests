@@ -1,0 +1,109 @@
+test/functional/test_runner.py test/functional/wallet*
+functional/test_runner.py functional/wallet* (called from the test/ directory)
+test_runner.py wallet* (called from the test/functional/ directory)
+Temporary test directory at /tmp/test_runner_₿_🏃_20230204_121910
+Running Unit Tests for Test Framework Modules
+..........
+----------------------------------------------------------------------
+Ran 10 tests in 0.925s
+
+OK
+1/95 - wallet_abandonconflict.py --legacy-wallet skipped (BDB has not been compiled.)
+2/95 - wallet_address_types.py --legacy-wallet skipped (BDB has not been compiled.)
+3/95 - wallet_avoidreuse.py --legacy-wallet skipped (BDB has not been compiled.)
+4/95 - wallet_abandonconflict.py --descriptors passed, Duration: 9 s
+5/95 - wallet_backup.py --legacy-wallet skipped (BDB has not been compiled.)
+6/95 - wallet_avoidreuse.py --descriptors passed, Duration: 12 s
+7/95 - wallet_backwards_compatibility.py --legacy-wallet skipped (BDB has not been compiled.)
+8/95 - wallet_backwards_compatibility.py --descriptors skipped (previous releases not available or disabled)
+9/95 - wallet_balance.py --legacy-wallet skipped (BDB has not been compiled.)
+10/95 - wallet_avoid_mixing_output_types.py --descriptors passed, Duration: 16 s
+11/95 - wallet_basic.py --legacy-wallet skipped (BDB has not been compiled.)
+12/95 - wallet_address_types.py --descriptors passed, Duration: 20 s
+13/95 - wallet_bumpfee.py --legacy-wallet skipped (BDB has not been compiled.)
+14/95 - wallet_balance.py --descriptors passed, Duration: 10 s
+15/95 - wallet_coinbase_category.py --legacy-wallet skipped (BDB has not been compiled.)
+16/95 - wallet_coinbase_category.py --descriptors passed, Duration: 2 s
+17/95 - wallet_create_tx.py --legacy-wallet skipped (BDB has not been compiled.)
+18/95 - wallet_create_tx.py --descriptors passed, Duration: 6 s
+19/95 - wallet_createwallet.py --legacy-wallet skipped (BDB has not been compiled.)
+20/95 - wallet_createwallet.py --usecli passed, Duration: 4 s
+21/95 - wallet_createwallet.py --descriptors passed, Duration: 4 s
+22/95 - wallet_backup.py --descriptors passed, Duration: 33 s
+23/95 - wallet_crosschain.py passed, Duration: 2 s
+24/95 - wallet_disable.py passed, Duration: 1 s
+25/95 - wallet_dump.py --legacy-wallet skipped (BDB has not been compiled.)
+26/95 - wallet_encryption.py --legacy-wallet skipped (BDB has not been compiled.)
+27/95 - wallet_basic.py --descriptors passed, Duration: 31 s
+28/95 - wallet_fallbackfee.py --legacy-wallet skipped (BDB has not been compiled.)
+29/95 - wallet_descriptor.py --descriptors passed, Duration: 7 s
+30/95 - wallet_fallbackfee.py --descriptors passed, Duration: 3 s
+31/95 - wallet_fundrawtransaction.py --legacy-wallet skipped (BDB has not been compiled.)
+32/95 - wallet_encryption.py --descriptors passed, Duration: 7 s
+33/95 - wallet_groups.py --legacy-wallet skipped (BDB has not been compiled.)
+34/95 - wallet_bumpfee.py --descriptors passed, Duration: 37 s
+35/95 - wallet_hd.py --legacy-wallet skipped (BDB has not been compiled.)
+36/95 - wallet_fast_rescan.py --descriptors passed, Duration: 11 s
+37/95 - wallet_implicitsegwit.py --legacy-wallet skipped (BDB has not been compiled.)
+38/95 - wallet_hd.py --descriptors passed, Duration: 7 s
+39/95 - wallet_importmulti.py --legacy-wallet skipped (BDB has not been compiled.)
+40/95 - wallet_importprunedfunds.py --legacy-wallet skipped (BDB has not been compiled.)
+41/95 - wallet_importprunedfunds.py --descriptors passed, Duration: 3 s
+42/95 - wallet_import_rescan.py --legacy-wallet skipped (BDB has not been compiled.)
+43/95 - wallet_import_with_label.py --legacy-wallet skipped (BDB has not been compiled.)
+44/95 - wallet_inactive_hdchains.py --legacy-wallet skipped (BDB has not been compiled.)
+45/95 - wallet_keypool.py --legacy-wallet skipped (BDB has not been compiled.)
+46/95 - wallet_keypool.py --descriptors passed, Duration: 5 s
+47/95 - wallet_keypool_topup.py --legacy-wallet skipped (BDB has not been compiled.)
+48/95 - wallet_importdescriptors.py --descriptors passed, Duration: 20 s
+49/95 - wallet_labels.py --legacy-wallet skipped (BDB has not been compiled.)
+50/95 - wallet_labels.py --descriptors passed, Duration: 4 s
+51/95 - wallet_keypool_topup.py --descriptors passed, Duration: 10 s
+52/95 - wallet_listreceivedby.py --legacy-wallet skipped (BDB has not been compiled.)
+53/95 - wallet_listdescriptors.py --descriptors passed, Duration: 2 s
+54/95 - wallet_listsinceblock.py --legacy-wallet skipped (BDB has not been compiled.)
+55/95 - wallet_fundrawtransaction.py --descriptors passed, Duration: 44 s
+56/95 - wallet_listreceivedby.py --descriptors passed, Duration: 8 s
+57/95 - wallet_listtransactions.py --legacy-wallet skipped (BDB has not been compiled.)
+58/95 - wallet_migration.py skipped (BDB has not been compiled.)
+59/95 - wallet_listsinceblock.py --descriptors passed, Duration: 9 s
+60/95 - wallet_miniscript.py --descriptors passed, Duration: 2 s
+61/95 - wallet_multiwallet.py --legacy-wallet skipped (BDB has not been compiled.)
+62/95 - wallet_multisig_descriptor_psbt.py --descriptors passed, Duration: 3 s
+63/95 - wallet_groups.py --descriptors passed, Duration: 47 s
+64/95 - wallet_orphanedreward.py passed, Duration: 11 s
+65/95 - wallet_pruning.py --legacy-wallet skipped (BDB has not been compiled.)
+66/95 - wallet_listtransactions.py --descriptors passed, Duration: 22 s
+67/95 - wallet_resendwallettransactions.py --legacy-wallet skipped (BDB has not been compiled.)
+68/95 - wallet_reorgsrestore.py passed, Duration: 6 s
+69/95 - wallet_sendall.py --legacy-wallet skipped (BDB has not been compiled.)
+70/95 - wallet_multiwallet.py --usecli passed, Duration: 21 s
+71/95 - wallet_resendwallettransactions.py --descriptors passed, Duration: 4 s
+72/95 - wallet_send.py --legacy-wallet skipped (BDB has not been compiled.)
+73/95 - wallet_sendall.py --descriptors passed, Duration: 7 s
+74/95 - wallet_signer.py --descriptors passed, Duration: 6 s
+75/95 - wallet_signmessagewithaddress.py passed, Duration: 2 s
+76/95 - wallet_signrawtransactionwithwallet.py --legacy-wallet skipped (BDB has not been compiled.)
+77/95 - wallet_simulaterawtx.py --legacy-wallet skipped (BDB has not been compiled.)
+78/95 - wallet_simulaterawtx.py --descriptors passed, Duration: 1 s
+79/95 - wallet_signrawtransactionwithwallet.py --descriptors passed, Duration: 4 s
+80/95 - wallet_startup.py passed, Duration: 4 s
+81/95 - wallet_timelock.py passed, Duration: 2 s
+82/95 - wallet_send.py --descriptors passed, Duration: 24 s
+83/95 - wallet_transactiontime_rescan.py --legacy-wallet skipped (BDB has not been compiled.)
+84/95 - wallet_multiwallet.py --descriptors passed, Duration: 49 s
+85/95 - wallet_transactiontime_rescan.py --descriptors passed, Duration: 10 s
+86/95 - wallet_txn_clone.py passed, Duration: 4 s
+87/95 - wallet_txn_clone.py --segwit passed, Duration: 4 s
+88/95 - wallet_txn_doublespend.py --legacy-wallet skipped (BDB has not been compiled.)
+89/95 - wallet_txn_clone.py --mineblock passed, Duration: 7 s
+90/95 - wallet_upgradewallet.py --legacy-wallet skipped (BDB has not been compiled.)
+91/95 - wallet_watchonly.py --legacy-wallet skipped (BDB has not been compiled.)
+Remaining jobs: [wallet_taproot.py --descriptors, wallet_txn_doublespend.py --mineblock, wallet_txn_doublespend.py --descriptors, wallet_watchonly.py --usecli --legacy-wallet]
+92/95 - wallet_watchonly.py --usecli --legacy-wallet skipped (BDB has not been compiled.)
+Remaining jobs: [wallet_taproot.py --descriptors, wallet_txn_doublespend.py --mineblock, wallet_txn_doublespend.py --descriptors]
+93/95 - wallet_txn_doublespend.py --mineblock passed, Duration: 7 s
+Remaining jobs: [wallet_taproot.py --descriptors, wallet_txn_doublespend.py --descriptors]
+94/95 - wallet_txn_doublespend.py --descriptors passed, Duration: 5 s
+Remaining jobs: [wallet_taproot.py --descriptors]
+95/95 - wallet_taproot.py --descriptors passed, Duration: 38 s
